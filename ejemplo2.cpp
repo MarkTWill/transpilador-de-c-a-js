@@ -25,38 +25,45 @@ private:
     }
 };
 
-void markWill(int x, int y){
-    int mark;
-    int will = 0;
-    int ARRAY[5]={0,1,2,3,4};
-    if(4<5){
-        int z= 5;
-    }
-    while(mark == will){
-        if(mark){
-            will=true;
-        }else{int a = 5;}
+void arreglo(int x, float y){
+    int ARRAY[5]={5,1,4,7,41};
+    if(x<y){
+        for(int i=0; i<5; i++){
+            cout<<ARRAY[i];
+        }
     }
 
 }
 
 int main(){
+    cout<<"Traductor de codigo:\n";
     int a=0;
-    if(a==0){int a=0;}
-    while(a>5){
-        if(a==0){int a=0;}
-        cout<<"prueva";
+    string cad = "*";
+    while(a<5){
+        cout<<cad;
+        cad+="*";
+        a++;
     }   
+    cout<<"==========================================";
+    for(int i=0; i<2; i++){
+        cout<<i;
+    }
+    cout<<"prueva";
     for(int i=0; i<5; i++){
         cout<<"escribir algo";
     }
-    
-    func(1,2,3);
+    cout<<"==========================================";
+    int m=2;
+    int n=3;
+    arreglo(m,n);
+    cout<<"==========================================";
+    suma(1,2,3);
     return 0;
 }
 
-int func(int a, int b, int c){
+int suma(int a, int b, int c){
     int resul=0;
     resul = a+b+c;
-    cout<<resul;
+    cout<<"==========================================";
+    cout<<"resultado: "+resul;
 }
